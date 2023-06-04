@@ -3,7 +3,7 @@
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Permission Check..."
 IZIN=$(wget -qO- ipv4.icanhazip.com);
-sleep 2
+sleep 1
 echo -e "\e[32mPermission Accepted...\e[0m"
 clear
 # Color Validation
