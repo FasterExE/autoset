@@ -42,30 +42,14 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/websocket"
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/ohp"
 
 # Getting
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Permission Check..."
+IZIN=$(wget -qO- ipv4.icanhazip.com);
 sleep 2
-# Getting
-IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
-sleep 2
-else
 clear
-echo -e ""
-echo -e "======================================="
-echo -e ""
-echo -e "\e[31mPermission Denied...!!!\e[0m";
-echo -e "YOUR VPS IP IS NOT REGISTERED"
-echo -e "Contact telegram : @givpn"
-echo -e "For Registration IP VPS"
-echo -e ""
-echo -e "======================================="
-echo -e ""
 rm -f setup.sh
-sleep 60
-exit 0
-fi
+clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
