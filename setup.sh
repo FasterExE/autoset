@@ -42,11 +42,28 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/websocket"
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/ohp"
 
 # Getting
+echo -e ""
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m          ⇱ SCRIPT BY GIVPN ⇲          \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e ""
+sleep 5
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-echo "Permission Check..."
-IZIN=$(wget -qO- ipv4.icanhazip.com);
-sleep 2
-echo -e "\e[32mPermission Accepted...\e[0m"
+IZIN=$( curl https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP )
+echo "Memeriksa Hak Akses VPS..."
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e "${CYAN}Akses Diizinkan...${off}"
+sleep 1
+else
+clear
+echo -e "${PURPLE}Akses Diblokir!${off}"
+echo "Contact : @givpn"
+sleep 60
+exit 0
+fi
+clear
+echo "Checking VPS"
 clear
 rm -f setup.sh
 clear
