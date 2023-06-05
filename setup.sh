@@ -48,6 +48,8 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m          ⇱ SCRIPT BY GIVPN ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
+apt install git curl -y >/dev/null 2>&1
+apt install python -y >/dev/null 2>&1
 sleep 5
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 IZIN=$( curl https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP )
@@ -59,7 +61,7 @@ sleep 1
 else
 clear
 echo -e "${PURPLE}Akses Diblokir!${off}"
-echo "Contact : @givpn"
+echo -e "${GREEN}Contact : @givpn\033[0m${NC}"
 sleep 60
 exit 0
 fi
