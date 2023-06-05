@@ -41,6 +41,7 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/websocket"
 # Link Hosting Kalian Untuk Ohp
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/givpn/autoset/master/ohp"
 
+
 # Getting
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
