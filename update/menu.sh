@@ -1,11 +1,29 @@
 #!/bin/bash
-# Getting
-MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Permission Check..."
-IZIN=$(wget -qO- ipv4.icanhazip.com);
-sleep 1
+#########################
+IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
+if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
-clear
+else
+echo -e "\e[31mPermission Denied!\e[0m";
+exit 0
+fi
+#EXPIRED
+expired=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+echo $expired > /root/expired.txt
+today=$(date -d +1day +%Y-%m-%d)
+while read expired
+do
+	exp=$(echo $expired | curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+	if [[ $exp < $today ]]; then
+		Exp2="\033[1;31mExpired\033[0m"
+        else
+        Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+	fi
+done < /root/expired.txt
+rm /root/expired.txt
+Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
 # Color Validation
 green='\e[32m'
 red='\e[31m'
@@ -39,6 +57,9 @@ echo -e "$yy 17$y. sl-fix (Fix SSLH+WS-TLS Error after reboot)$wh"
 echo -e "$yy 18$y. Settings$wh"
 echo -e "$yy 19$y. Shadowsocks Plugin (Create Account)$wh"
 echo -e "$yy 20$y. Exit $wh"
+echo -e "$y-------------------------------------------------$wh"
+echo -e " \e[33mClient Name \E[0m: $Name"
+echo -e " \e[33mExpired     \E[0m: $Exp2"
 echo -e "$y-------------------------------------------------$wh"
 echo -e "$yl            Telegram : t.me/givpn$wh"
 echo -e "$y-------------------------------------------------$wh"
