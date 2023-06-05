@@ -106,6 +106,7 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 # Donation Thanks for your support me
 [![Saweria donate button](https://raw.githubusercontent.com/givpn/donation-button/main/saweria.png)](https://saweria.co/givpn11)
+[![PayPal donate button](https://raw.githubusercontent.com/givpn/donation-button/main/paypal.png)](https://paypal.me/givpn11)
 [![Ko-fi donate button](https://raw.githubusercontent.com/givpn/donation-button/main/ko-fi.png)](https://ko-fi.com/givpn11)
 
 # LICENSE
