@@ -71,7 +71,7 @@ m-tcp
 ;;
 14)
 clear
-menu-dns
+m-dns
 ;;
 15)
 clear
