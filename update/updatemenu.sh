@@ -32,8 +32,8 @@ rm -rf install-sldns
 rm -rf addssh
 wget -O install-sldns "https://raw.githubusercontent.com/givpn/autoset/master/SLDNS/install-sldns"
 wget -O restart "https://raw.githubusercontent.com/givpn/autoset/master/ssh/restart.sh"
-wget -O m-tcp "https://raw.githubusercontent.com/givpn/autoset/master/update/tcp.sh"
-wget -O menu-dns "https://raw.githubusercontent.com/givpn/autoset/master/update/dnsmenu.sh"
+wget -O m-tcp "https://raw.githubusercontent.com/givpn/autoset/master/update/m-tcp.sh"
+wget -O m-dns "https://raw.githubusercontent.com/givpn/autoset/master/update/m-dns.sh"
 wget -O addssh "https://raw.githubusercontent.com/givpn/autoset/master/ssh/addssh.sh"
 wget -O menu "https://raw.githubusercontent.com/givpn/autoset/master/update/menu.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/givpn/autoset/master/update/ipsaya.sh"
@@ -64,7 +64,7 @@ chmod +x xray-grpc
 chmod +x install-sldns
 chmod +x restart
 chmod +x m-tcp
-chmod +x menu-dns
+chmod +x m-dns
 chmod +x addssh
 chmod +x slhost
 chmod +x menu
