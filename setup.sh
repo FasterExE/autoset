@@ -1,4 +1,33 @@
 #!/bin/bash
+# Permission check
+clear
+apt install curl -y
+MYIP=$(curl -sS ipv4.icanhazip.com)
+echo "Permission Check..."
+#########################
+IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
+if [ $MYIP = $IZIN ]; then
+echo -e "\e[32mPermission Accepted...\e[0m"
+else
+echo -e "\e[31mPermission Denied!\e[0m";
+exit 0
+fi
+#EXPIRED
+expired=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+echo $expired > /root/expired.txt
+today=$(date -d +1day +%Y-%m-%d)
+while read expired
+do
+	exp=$(echo $expired | curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+	if [[ $exp < $today ]]; then
+		Exp2="\033[1;31mExpired\033[0m"
+        else
+        Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+	fi
+done < /root/expired.txt
+rm /root/expired.txt
+Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
+# system
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
