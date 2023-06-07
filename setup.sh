@@ -50,24 +50,10 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
-sleep 5
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-IZIN=$( curl https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP )
-echo "Memeriksa Hak Akses VPS..."
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e "${CYAN}Akses Diizinkan...${off}"
 sleep 1
-else
-clear
-echo -e "${PURPLE}Akses Diblokir!${off}"
-echo -e "${GREEN}Contact : @givpn\033[0m${NC}"
-sleep 60
-exit 0
-fi
-clear
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
-clear
+IZIN=$(wget -qO- ipinfo.io/ip);
 rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
