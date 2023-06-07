@@ -12,15 +12,6 @@ else
 echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
 fi
-# system
-if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
-		exit 1
-fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-		echo "OpenVZ is not supported"
-		exit 1
-fi
 # Color
 green='\e[32m'
 red='\e[31m'
