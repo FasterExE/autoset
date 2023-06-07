@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Permission Check..."
 #########################
