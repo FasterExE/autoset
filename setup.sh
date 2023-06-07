@@ -1,16 +1,11 @@
 #!/bin/bash
-# Permission check
-clear
-apt install curl -y
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "Permission Check..."
-#########################
-IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo -e "\e[32mPermission Accepted...\e[0m"
-else
-echo -e "\e[31mPermission Denied!\e[0m";
-exit 0
+if [ "${EUID}" -ne 0 ]; then
+		echo "You need to run this script as root"
+		exit 1
+fi
+if [ "$(systemd-detect-virt)" == "openvz" ]; then
+		echo "OpenVZ is not supported"
+		exit 1
 fi
 # Color
 green='\e[32m'
