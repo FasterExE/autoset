@@ -1,6 +1,11 @@
 #!/bin/bash
 # ==========================================
 # Color
+m="\033[0;1;36m"
+y="\033[0;1;37m"
+yy="\033[0;1;32m"
+yl="\033[0;1;33m"
+wh="\033[0m"
 # hapus menu
 rm -rf menu
 rm -rf ipsaya
@@ -87,4 +92,8 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
+clear
+echo -e "$y                   Update success..$wh"
+sleep 2
 cd
+menu
