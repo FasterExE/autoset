@@ -1,13 +1,18 @@
 #!/bin/bash
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "Permission Check..."
+echo "\e[1;34mPermission Check...\e[0m"
+clear
 #########################
 IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-echo -e "\e[32mPermission Accepted...\e[0m"
+echo -e "\e[1;32mPermission Accepted...\e[0m"
 else
-echo -e "\e[31mPermission Denied!\e[0m";
+echo -e "\e[1;31m  Permission Denied!\e[0m";
+echo -e "\e[1;34m     Contact me \e[0m";
+echo -e "\e[1;32m Telegram : t.me/givpn \e[0m";
+echo -e "\e[1;35m    For Register IP \e[0m";
+sleep 30
 exit 0
 fi
 #EXPIRED
@@ -29,6 +34,10 @@ Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | gr
 green='\e[32m'
 red='\e[31m'
 yell='\e[33m'
+Red='\e[1;31m'
+Green='\e[1;32m'
+Blue='\e[1;34m'
+Purple='\e[1;35m
 NC='\e[0m'
 m="\033[0;1;36m"
 y="\033[0;1;37m"
