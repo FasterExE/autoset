@@ -8,7 +8,8 @@ echo "Permission Check..."
 #########################
 IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-echo -e "\e[32mPermission Accepted...\e[0m"
+echo -e "\e[1;32mPermission Accepted...\e[0m"
+sleep 2
 else
 echo -e "\e[1;31m  Permission Denied!\e[0m";
 echo -e "\e[1;34m     Contact me \e[0m";
