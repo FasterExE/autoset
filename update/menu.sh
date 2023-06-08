@@ -44,6 +44,9 @@ y="\033[0;1;37m"
 yy="\033[0;1;32m"
 yl="\033[0;1;33m"
 wh="\033[0m"
+# IP INFO
+ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d
+CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
 # TOTAL RAM
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
@@ -61,6 +64,8 @@ echo -e " \e[1;34mHostname    \e[0m: $HOSTNAME"
 echo -e " \e[1;34mOS Name     \e[0m: $Tipe"
 echo -e " \e[1;34mTotal RAM   \e[0m: ${totalram}MB"
 echo -e " \e[1;34mPublic IP   \e[0m: $MYIP"
+echo -e " \e[1;34mProvider    \e[0m: $ISP"
+echo -e " \e[1;34mCity        \e[0m: $CITY"
 echo -e " \e[1;34mDomain      \e[0m: $Domen"
 echo -e " \e[1;34mName Server \e[0m: $sldomain"
 echo -e "$y-------------------------------------------------$wh"
