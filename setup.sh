@@ -73,7 +73,6 @@ rm -f /etc/xray/domain
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
-sleep 5
 exit 0
 fi
 mkdir /var/lib/crot;
