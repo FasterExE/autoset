@@ -343,7 +343,7 @@ kernelku=$(uname -r)
 
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
-sldomain=$(cat /root/nsdomain)
+sldomain="$(cat /root/nsdomain)"
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m              ⇱ Sytem Information ⇲             \E[0m"
