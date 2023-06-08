@@ -30,6 +30,7 @@ do
 done < /root/expired.txt
 rm /root/expired.txt
 Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
+clear
 # Color Validation
 green='\e[32m'
 red='\e[31m'
