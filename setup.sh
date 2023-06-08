@@ -10,10 +10,10 @@ IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | aw
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 else
-echo -e "\e[31m  Permission Denied!\e[0m";
-echo -e "$BLUE      Contact me $NC";
-echo -e "$GREEN Telegram : t.me/givpn $NC";
-echo -e "$ORANGE   For Register IP $NC";
+echo -e "\e[0;101m  Permission Denied!\e[0m";
+echo -e "\e[0;104m      Contact me \e[0m";
+echo -e "\e[0;102m Telegram : t.me/givpn \e[0m";
+echo -e "\e[0;105m    For Register IP \e[0m";
 sleep 60
 exit 0
 fi
@@ -30,6 +30,10 @@ fi
 green='\e[32m'
 red='\e[31m'
 yell='\e[33m'
+Red='\e[0;101m'
+Green='\e[0;102m'
+Blue='\e[0;104m'
+Purple='\e[0;105m'
 NC='\e[0m'
 RED='\033[0;31m'
 NC='\033[0m'
