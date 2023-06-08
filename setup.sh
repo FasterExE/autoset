@@ -1,6 +1,7 @@
 #!/bin/bash
 # Permission check
 clear
+rm -f setup.sh
 apt install curl -y
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Permission Check..."
