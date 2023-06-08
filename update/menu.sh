@@ -45,7 +45,7 @@ yy="\033[0;1;32m"
 yl="\033[0;1;33m"
 wh="\033[0m"
 # IP INFO
-ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d
+ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d )
 CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
 # TOTAL RAM
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
