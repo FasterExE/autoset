@@ -44,16 +44,27 @@ y="\033[0;1;37m"
 yy="\033[0;1;32m"
 yl="\033[0;1;33m"
 wh="\033[0m"
+# TOTAL RAM
+total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+totalram=$(($total_ram/1024))
+# GETTING OS INFORMATION
+source /etc/os-release
+Tipe=$NAME
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 sldomain="$(cat /root/nsdomain)"
 echo -e ""
 echo -e "$y-------------------------------------------------$wh"
-echo -e " \e[1;34Public IP    \e[0m: $MYIP"
+echo -e "\e[1;34m            Sytem Information\e[0m"
+echo -e "$y-------------------------------------------------$wh"
+echo -e " \e[1;34mHostname    \e[0m: $HOSTNAME"
+echo -e " \e[1;34mOS Name     \e[0m: $Tipe"
+echo -e " \e[1;34mTotal RAM   \e[0m: ${totalram}MB"
+echo -e " \e[1;34mPublic IP   \e[0m: $MYIP"
 echo -e " \e[1;34mDomain      \e[0m: $Domen"
 echo -e " \e[1;34mName Server \e[0m: $sldomain"
 echo -e "$y-------------------------------------------------$wh"
-echo -e "$y                     MENU$wh"
+echo -e "\e[1;34m                MENU\e[0m"
 echo -e "$y-------------------------------------------------$wh"
 echo -e "$yy 1$y.  SSH & OpenVPN MENU$wh"
 echo -e "$yy 2$y.  L2TP MENU$wh"
