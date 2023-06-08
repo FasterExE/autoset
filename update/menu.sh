@@ -30,7 +30,6 @@ do
 done < /root/expired.txt
 rm /root/expired.txt
 Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
-clear
 # Color Validation
 green='\e[32m'
 red='\e[31m'
@@ -57,6 +56,7 @@ Tipe=$NAME
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 sldomain="$(cat /root/nsdomain)"
+clear
 echo -e ""
 echo -e "$y-------------------------------------------------$wh"
 echo -e "\e[1;34m            Sytem Information\e[0m"
