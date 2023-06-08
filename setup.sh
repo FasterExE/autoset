@@ -10,8 +10,8 @@ if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 else
 echo -e "\e[31mPermission Denied!\e[0m";
-echo -e "\e[32mContact : t.me/givpn\e[0m";
-echo -e "\e[32mContact : t.me/givpn\e[0m";
+echo -e "\e[32m   Contact me\e[0m";
+echo -e "\e[32mTelegram : t.me/givpn\e[0m";
 echo -e "$PURPLE For Register IP $NC";
 sleep 60
 exit 0
