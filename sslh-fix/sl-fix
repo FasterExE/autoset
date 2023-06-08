@@ -1,6 +1,7 @@
 #!/bin/bash
 # ==========================================
-
+Blue='\e[1;34m'
+NC='\e[0m'
 
 cd /usr/bin
 rm -rf restart
@@ -56,3 +57,9 @@ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 cd /root/
+cd
+echo -e "\e[1;34m            Success...\e[0m"
+sleep 2
+echo -e "\e[1;34m           Back To Menu Please Wait...\e[0m"
+sleep 3
+menu
