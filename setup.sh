@@ -12,21 +12,6 @@ else
 echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
 fi
-#EXPIRED
-expired=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-echo $expired > /root/expired.txt
-today=$(date -d +1day +%Y-%m-%d)
-while read expired
-do
-	exp=$(echo $expired | curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-	if [[ $exp < $today ]]; then
-		Exp2="\033[1;31mExpired\033[0m"
-        else
-        Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-	fi
-done < /root/expired.txt
-rm /root/expired.txt
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
 # System
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
@@ -84,6 +69,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 IZIN=$(wget -qO- ipinfo.io/ip);
 rm -f setup.sh
+rm -f /etc/xray/domain
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
