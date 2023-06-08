@@ -5,16 +5,17 @@ rm -f setup.sh
 apt install curl -y
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Permission Check..."
+sleep 2
 #########################
 IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-echo -e "\e[1;32mPermission Accepted...\e[0m"
+echo -e "\e[1;32mPermission Accepted... Good...!!!\e[0m"
 sleep 2
 else
 echo -e "\e[1;31m  Permission Denied!\e[0m";
 echo -e "\e[1;34m     Contact me \e[0m";
 echo -e "\e[1;32m Telegram : t.me/givpn \e[0m";
-echo -e "\e[1;36m    For Register IP \e[0m";
+echo -e "\e[1;35m    For Register IP \e[0m";
 sleep 60
 exit 0
 fi
@@ -34,7 +35,7 @@ yell='\e[33m'
 Red='\e[1;31m'
 Green='\e[1;32m'
 Blue='\e[1;34m'
-Cyan='\e[1;36m'
+Purple='\e[1;35m'
 NC='\e[0m'
 RED='\033[0;31m'
 NC='\033[0m'
