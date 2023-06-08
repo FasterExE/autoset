@@ -1,11 +1,12 @@
 #!/bin/bash
 # Permission check
 clear
-rm -f setup.sh
+rm -rf setup.sh
 apt install curl -y
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[1;34mPermission Check...\e[0m"
 sleep 5
+clear
 #########################
 IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
