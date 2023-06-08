@@ -4,13 +4,13 @@ clear
 rm -f setup.sh
 apt install curl -y
 MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "Permission Check..."
-sleep 2
+echo "\e[1;34mPermission Check...\e[0m"
+sleep 5
 #########################
 IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[1;32mPermission Accepted... Good...!!!\e[0m"
-sleep 2
+sleep 5
 else
 echo -e "\e[1;31m  Permission Denied!\e[0m";
 echo -e "\e[1;34m     Contact me \e[0m";
