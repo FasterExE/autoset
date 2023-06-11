@@ -111,3 +111,5 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 # LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+![profile views](https://komarev.com/ghpvc/?username=givpn11&color=blue)
