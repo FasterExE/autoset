@@ -1,35 +1,6 @@
 #!/bin/bash
-clear
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "\e[1;34mPermission Check...\e[0m"
-clear
-#########################
-IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo -e "\e[1;32mPermission Accepted...\e[0m"
-else
-echo -e "\e[1;31m  Permission Denied!\e[0m";
-echo -e "\e[1;34m     Contact me \e[0m";
-echo -e "\e[1;32m Telegram : t.me/givpn \e[0m";
-echo -e "\e[1;35m    For Register IP \e[0m";
-sleep 30
-exit 0
-fi
-#EXPIRED
-expired=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-echo $expired > /root/expired.txt
-today=$(date -d +1day +%Y-%m-%d)
-while read expired
-do
-	exp=$(echo $expired | curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-	if [[ $exp < $today ]]; then
-		Exp2="\033[1;31mExpired\033[0m"
-        else
-        Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
-	fi
-done < /root/expired.txt
-rm /root/expired.txt
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
+Exp2=$Lifetime
+Name=$givpn
 # Color Validation
 green='\e[32m'
 red='\e[31m'
