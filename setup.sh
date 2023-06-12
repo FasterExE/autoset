@@ -1,25 +1,4 @@
 #!/bin/bash
-# Permission check
-clear
-rm -rf setup.sh
-apt install curl -y
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo -e "\e[1;34mPermission Check...\e[0m"
-sleep 5
-clear
-#########################
-IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo -e "\e[1;32mPermission Accepted... Good...!!!\e[0m"
-sleep 5
-else
-echo -e "\e[1;31m  Permission Denied!\e[0m";
-echo -e "\e[1;34m     Contact me \e[0m";
-echo -e "\e[1;32m Telegram : t.me/givpn \e[0m";
-echo -e "\e[1;35m    For Register IP \e[0m";
-sleep 60
-exit 0
-fi
 # System
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
