@@ -38,6 +38,8 @@ Port 2443
 Port 2543
 Port 3443
 Port 3543
+Port 53
+Port 5300
 Port 8443
 Port 2083
 Port 8880
