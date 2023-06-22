@@ -21,9 +21,12 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
-Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+#MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(curl -sS ifconfig.me)
+#Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $2}')
+#Exp2=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/autoset | grep $MYIP | awk '{print $3}')
+Exp2=$"Lifetime"
+Name=$"givpn"
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
@@ -49,7 +52,7 @@ echo -e "$ITAM"
 #clear
 #WAKTU=$( curl -s ipinfo.ip/timezone )
 #clear
-CITY=$( curl -s ipinfo.io/city?token=ce3da57536810d )
+#CITY=$( curl -s ipinfo.io/city?token=ce3da57536810d )
 #clear
 #REGION=$( curl -s ipinfo.io/region )
 #clear
