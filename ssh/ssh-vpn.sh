@@ -373,6 +373,7 @@ cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O slhost "https://${akbarvpn}/slhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
+wget -O limitspeed "https://raw.githubusercontent.com/givpn/autoset/master/ssh/limitspeed.sh"
 wget -O menu "https://raw.githubusercontent.com/givpn/autoset/master/update/menu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
@@ -480,6 +481,7 @@ chmod +x restart
 chmod +x speedtest
 chmod +x info
 chmod +x about
+chmod +x limitspeed
 chmod +x autokill
 chmod +x tendang
 chmod +x ceklim
