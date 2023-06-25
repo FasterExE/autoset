@@ -92,9 +92,7 @@
 
 • Auto Delete Expired Account
 
-• Backup Data ALL Service
-
-• Restore Data ALL Service
+• FITUR Backup ana DELETE PERMANENT
 
 # Buat root di VPS
 - Step 1
