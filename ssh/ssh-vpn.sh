@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# cari apa tod
+# Cari apa tod
 # Color
 RED='\033[0;31m'
 NC='\033[0m'
