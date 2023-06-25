@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # cari apa tod
 # Color
 RED='\033[0;31m'
