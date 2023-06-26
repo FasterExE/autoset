@@ -64,8 +64,8 @@ echo -e "$yy 15$y. CHECK ALL SERVICE VPN$wh"
 echo -e "$yy 16$y. UPDATE MENU (Update)$wh"
 echo -e "$yy 17$y. sl-fix (Fix SSLH+WS-TLS Error after reboot)$wh"
 echo -e "$yy 18$y. Settings$wh"
-echo -e "$yy 19$y. Shadowsocks Plugin (Create Account)$wh"
-echo -e "$yy 20$y. Exit $wh"
+echo -e "$yy 19$y. Exit$wh"
+#echo -e "$yy 20$y. Exit $wh"
 echo -e "$y-------------------------------------------------$wh"
 echo -e " \e[1;34mClient Name \e[0m: $Name"
 echo -e " \e[1;34mExpired     \e[0m: $Exp2"
@@ -148,7 +148,7 @@ setmenu
 ;;
 19)
 clear
-addss-p
+exit
 ;;
 20)
 clear
