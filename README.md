@@ -72,8 +72,6 @@
 
 • Trojan Go                 : 2087
 
-• CloudFront Over Websocket : [OFF]
-
 # Service Information
 
 • Timezone                : Asia/Jakarta (GMT +7)
