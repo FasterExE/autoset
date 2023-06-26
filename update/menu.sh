@@ -1,4 +1,5 @@
 #!/bin/bash
+# cari apa tod
 Exp2=$"Lifetime"
 Name=$"givpn"
 # Color Validation
