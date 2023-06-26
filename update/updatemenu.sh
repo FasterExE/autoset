@@ -62,9 +62,9 @@ wget -O slowdnsmenu "https://raw.githubusercontent.com/givpn/autoset/master/upda
 wget -O running "https://raw.githubusercontent.com/givpn/autoset/master/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/givpn/autoset/master/update/updatemenu.sh"
 wget -O slhost "https://raw.githubusercontent.com/givpn/autoset/master/ssh/slhost.sh"
-wget -O install-ss-plugin "https://raw.githubusercontent.com/givpn/autoset/master/shadowsocks-plugin/install-ss-plugin.sh"
+#wget -O install-ss-plugin "https://raw.githubusercontent.com/givpn/autoset/master/shadowsocks-plugin/install-ss-plugin.sh"
 
-chmod +x install-ss-plugin
+#chmod +x install-ss-plugin
 chmod +x xray-grpc
 chmod +x install-sldns
 chmod +x restart
