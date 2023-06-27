@@ -16,84 +16,50 @@
 <br>
 
 # Protocols
-
-• SlowDNS : All Port SSH
-
-• OpenSSH : 22, 2253
-
-• Dropbear : 443, 109, 143, 1153
-
-• Stunnel5 : 443, 445, 777
-
-• OpenVPN : TCP 1194, UDP 2200, SSL 990
-
-• Websocket SSH TLS : 443
-
-• Websocket SSH HTTP : 8880
-
-• Websockets OpenVPN : 2086
-
-• Squid Proxy : 3128, 8080
-
-• Badvpn : 7100, 7200, 7300
-
-• Nginx : 89
-
-• Wireguard : 7070
-
-• L2TP/IPSEC VPN : 1701
-
-• PPTP VPN : 1732
-
-• SSTP VPN : 444
-
-• Shadowsocks-R : 1443-1543
-
-• SS-OBFS TLS : 2443-2543
-
-• SS-OBFS HTTP : 3443-3543
-
-• XRAYS Vmess TLS : 8443
-
-• XRAYS Vmess None TLS : 80
-
-• XRAYS Vless TLS : 8443
-
-• XRAYS Vless None TLS : 80
-
-• XRAYS Trojan : 2083
-
-• XRAYS Vmess GRPC TLS : 1180,3380
-
-• XRAYS Vless GRPC TLS : 2280,4480
-
-• OHP SSH : 8181
-
-• Dropbear OHP : 8282
-
-• OHP OpenVPN : 8383
-
-• Trojan Go : 2087
+<br>
+- SlowDNS : All Port SSH<br>
+- OpenSSH : 22, 2253<br>
+- Dropbear : 443, 109, 143, 1153<br>
+- Stunnel5 : 443, 445, 777<br>
+- OpenVPN : TCP 1194, UDP 2200, SSL 990<br>
+- Websocket SSH TLS : 443<br>
+- Websocket SSH HTTP : 8880<br>
+- Websockets OpenVPN : 2086<br>
+- Squid Proxy : 3128, 8080<br>
+- Badvpn : 7100, 7200, 7300<br>
+- Nginx : 89<br>
+- Wireguard : 7070<br>
+- L2TP/IPSEC VPN : 1701<br>
+- PPTP VPN : 1732<br>
+- SSTP VPN : 444<br>
+- Shadowsocks-R : 1443-1543<br>
+- SS-OBFS TLS : 2443-2543<br>
+- SS-OBFS HTTP : 3443-3543<br>
+- XRAYS Vmess TLS : 8443<br>
+- XRAYS Vmess None TLS : 80<br>
+- XRAYS Vless TLS : 8443<br>
+- XRAYS Vless None TLS : 80<br>
+- XRAYS Trojan : 2083<br>
+- XRAYS Vmess GRPC TLS : 1180,3380<br>
+- XRAYS Vless GRPC TLS : 2280,4480<br>
+- OHP SSH : 8181<br>
+- Dropbear OHP : 8282<br>
+- OHP OpenVPN : 8383<br>
+- Trojan Go : 2087<br>
+<br>
 
 # Service Information
-
-• Timezone : Asia/Jakarta (GMT +7)
-
-• Fail2Ban : [ON]
-
-• Dflate : [ON]
-
-• IPtables : [ON]
-
-• Auto-Reboot : [ON]
-
-• IPv6 : [OFF]
-
-• Autoreboot On 05.00 GMT +7
-
-• Auto Delete Expired Accounts
-
-• FEATURE Backup ana DELETE PERMANENT
+<br>
+- Timezone : Asia/Jakarta (GMT +7)<br>
+- Fail2Ban : [ON]<br>
+- Dflate : [ON]<br>
+- IPtables : [ON]<br>
+- Auto-Reboot : [ON]<br>
+- IPv6 : [OFF]<br>
+- Autoreboot On 05.00 GMT +7<br>
+- Auto Delete Expired Accounts<br>
+- FEATURE Backup ana DELETE PERMANENT<br>
+<br>
 
 # Create root on VPS
 -Step 1
