@@ -58,7 +58,7 @@
 - IPv6 : [OFF]<br>
 - Autoreboot On 05.00 GMT +7<br>
 - Auto Delete Expired Accounts<br>
-- FEATURE Backup ana DELETE PERMANENT<br>
+- FEATURE Backup DELETE PERMANENT<br>
 <br>
 
 # Create root on VPS
