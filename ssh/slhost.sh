@@ -22,8 +22,8 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=givpn.online
-SUB_DOMAIN=autoset-${sub}.givpn.online
-NS_DOMAIN=autosetns-${sub}.givpn.online
+SUB_DOMAIN=aot-${sub}.givpn.online
+NS_DOMAIN=aotns-${sub}.givpn.online
 CF_ID=admin@givpn.online
 CF_KEY=fa8f8ea9172c18e3b2b689ef3e782f3b308d2
 set -euo pipefail
