@@ -1,4 +1,4 @@
-# langsung install sayangku tanpa perlu daftar ip
+# directly install my dear without the need for an IP list
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"></p> 
@@ -7,126 +7,132 @@
 </div>
 
 # Required
+- DOMAIN (MUST)/RANDOM from Script<br>
 - DEBIAN 9/10
 - Ubuntu 18/20 LTS
 - CPU MIN 1 CORE
-- RAM 1GB
+- 1GB of RAM
 
-# Protocol
+# Protocols
 
-• SlowDNS                   : All Port SSH
+• SlowDNS : All Port SSH
 
-• OpenSSH                   : 22, 2253
+• OpenSSH : 22, 2253
 
-• Dropbear                  : 443, 109, 143, 1153
+• Dropbear : 443, 109, 143, 1153
 
-• Stunnel5                  : 443, 445, 777
+• Stunnel5 : 443, 445, 777
 
-• OpenVPN                   : TCP 1194, UDP 2200, SSL 990
+• OpenVPN : TCP 1194, UDP 2200, SSL 990
 
-• Websocket SSH TLS         : 443
+• Websocket SSH TLS : 443
 
-• Websocket SSH HTTP        : 8880
+• Websocket SSH HTTP : 8880
 
-• Websocket OpenVPN         : 2086
+• Websockets OpenVPN : 2086
 
-• Squid Proxy               : 3128, 8080
+• Squid Proxy : 3128, 8080
 
-• Badvpn                    : 7100, 7200, 7300
+• Badvpn : 7100, 7200, 7300
 
-• Nginx                     : 89
+• Nginx : 89
 
-• Wireguard                 : 7070
+• Wireguard : 7070
 
-• L2TP/IPSEC VPN            : 1701
+• L2TP/IPSEC VPN : 1701
 
-• PPTP VPN                  : 1732
+• PPTP VPN : 1732
 
-• SSTP VPN                  : 444
+• SSTP VPN : 444
 
-• Shadowsocks-R             : 1443-1543
+• Shadowsocks-R : 1443-1543
 
-• SS-OBFS TLS               : 2443-2543
+• SS-OBFS TLS : 2443-2543
 
-• SS-OBFS HTTP              : 3443-3543
+• SS-OBFS HTTP : 3443-3543
 
-• XRAYS Vmess TLS           : 8443
+• XRAYS Vmess TLS : 8443
 
-• XRAYS Vmess None TLS      : 80
+• XRAYS Vmess None TLS : 80
 
-• XRAYS Vless TLS           : 8443
+• XRAYS Vless TLS : 8443
 
-• XRAYS Vless None TLS      : 80
+• XRAYS Vless None TLS : 80
 
-• XRAYS Trojan              : 2083
+• XRAYS Trojan : 2083
 
-• XRAYS Vmess GRPC TLS      : 1180,3380
+• XRAYS Vmess GRPC TLS : 1180,3380
 
-• XRAYS Vless GRPC TLS      : 2280,4480
+• XRAYS Vless GRPC TLS : 2280,4480
 
-• OHP SSH                   : 8181
+• OHP SSH : 8181
 
-• OHP Dropbear              : 8282
+• Dropbear OHP : 8282
 
-• OHP OpenVPN               : 8383
+• OHP OpenVPN : 8383
 
-• Trojan Go                 : 2087
+• Trojan Go : 2087
 
 # Service Information
 
-• Timezone                : Asia/Jakarta (GMT +7)
+• Timezone : Asia/Jakarta (GMT +7)
 
-• Fail2Ban                : [ON]
+• Fail2Ban : [ON]
 
-• Dflate                  : [ON]
+• Dflate : [ON]
 
-• IPtables                : [ON]
+• IPtables : [ON]
 
-• Auto-Reboot             : [ON]
+• Auto-Reboot : [ON]
 
-• IPv6                    : [OFF]
+• IPv6 : [OFF]
 
 • Autoreboot On 05.00 GMT +7
 
-• Auto Delete Expired Account
+• Auto Delete Expired Accounts
 
-• FITUR Backup ana DELETE PERMANENT
+• FEATURE Backup ana DELETE PERMANENT
 
-# Buat root di VPS
-- Step 1
+# Create root on VPS
+-Step 1
 ```
 sudo su
 ```
-- Step 2
+-Step 2
 ```
 cd
 ```
-- Step 3
+-Step 3
 ```
 apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoset/master/rootvps.sh && bash rootvps.sh
   
 ```
 
 # install
-  ```
+   ```
 rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/autoset/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
-  ```
+   ```
   
-# Hubungi saya jika ada yang perlu ditanyakan
+# Contact me if you have anything to ask
 # Telegram
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
-[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup)
+[![Telegram-group](https://img.shields.io/badge/Telegram-group-blue)](https://t.me/givpn_grup)
 
-# Belikan saya kopi
+# Buy me a coffee
 [![Saweria donate button](https://img.shields.io/badge/Donate-Saweria-red)](https://saweria.co/givpn11)
 [![Ko-fi donate button](https://img.shields.io/badge/Donate-Ko--fi-red)](https://ko-fi.com/givpn11)
 [![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-blue)](https://paypal.me/givpn11)
   
-# PERHATIAN BACA SECARA SEKSAMA
-- DILARANG DIPERJUAL BELIKAN KARENA SAYA MENDAPATKAN SECARA GRATIS DARI INTERNET
-- GUNAKAN SECARA BIJAK
-# PESAN AKHIR
-- TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA
+# ATTENTION READ CAREFULLY
+- NOT FOR SALE BECAUSE I GET IT FREE FROM THE INTERNET
+- USE IT WISELY
+# END MESSAGE
+- THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPERFECT WORDS
+- BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE MISTAKES
 
-# LICENSI POLISI TIDUR
+# LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+  <a><img src="https://img.shields.io/badge/givpn-Autoset%202023-blue" style="max-width:200%;">
+    </p>
