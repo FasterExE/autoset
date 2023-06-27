@@ -7,11 +7,13 @@
 </div>
 
 # Required
+<br>
 - DOMAIN (MUST)/RANDOM from Script<br>
-- DEBIAN 9/10
-- Ubuntu 18/20 LTS
-- CPU MIN 1 CORE
-- 1GB of RAM
+- DEBIAN 9/10<br>
+- Ubuntu 18/20 LTS<br>
+- CPU MIN 1 CORE<br>
+- 1GB of RAM<br>
+<br>
 
 # Protocols
 
