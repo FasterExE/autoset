@@ -61,7 +61,7 @@
 - FEATURE Backup DELETE PERMANENT<br>
 <br>
 
-# Create root on VPS
+# Create root on VPS and open Port
 -Step 1
 ```
 sudo su
