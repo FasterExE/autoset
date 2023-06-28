@@ -159,7 +159,6 @@ echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
 echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
 echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
-echo "   - CloudFront Websocket    : OFF"  | tee -a log-install.txt
 echo "   - SSH Websocket TLS       : 443"  | tee -a log-install.txt
 echo "   - SSH Websocket HTTP      : 8880"  | tee -a log-install.txt
 echo "   - Websocket OpenVPN       : 2086"  | tee -a log-install.txt
