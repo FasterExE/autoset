@@ -17,6 +17,7 @@ Red='\e[1;31m'
 Green='\e[1;32m'
 Blue='\e[1;34m'
 Purple='\e[1;35m'
+BGreen='\e[1;32m'
 NC='\e[0m'
 RED='\033[0;31m'
 NC='\033[0m'
@@ -200,7 +201,7 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo "   -                Telegram : t.me/givpn" | tee -a log-install.txt
-echo " Reboot 10 Sec"
+echo "$BGreen Auto reboot 10 Sec $NC"
 sleep 10
 rm -f setup.sh
 reboot
