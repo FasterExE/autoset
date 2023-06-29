@@ -205,3 +205,4 @@ echo "$BGreen Auto reboot 10 Sec $NC"
 sleep 10
 rm -f setup.sh
 reboot
+
