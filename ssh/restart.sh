@@ -37,6 +37,7 @@ systemctl restart openvpn-ohp
 systemctl restart trojan-go
 /etc/init.d/ssrmu restart
 /etc/init.d/ssh restart
+/etc/init.d/haproxy restart
 /etc/init.d/dropbear restart
 /etc/init.d/stunnel5 restart
 /etc/init.d/stunnel4 restart
