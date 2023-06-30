@@ -15,7 +15,6 @@ echo -e ""
 echo -e "Starting Restart All Service"
 sleep 1
 systemctl stop ws-tls
-systemctl disable --now haproxy
 systemctl start haproxy
 systemctl enable haproxy
 sudo systemctl restart haproxy
