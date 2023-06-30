@@ -4,7 +4,6 @@
 sleep 1
 systemctl stop ws-tls 
 pkill python
-systemctl disable --now haproxy
 systemctl start haproxy
 systemctl enable haproxy
 sudo systemctl restart haproxy
