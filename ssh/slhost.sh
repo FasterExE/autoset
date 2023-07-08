@@ -25,8 +25,8 @@ subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=givpn.online
 SUB_DOMAIN=aot-${sub}.givpn.online
 NS_DOMAIN=aotns-${sub}.givpn.online
-CF_ID=admin@givpn.online
-CF_KEY=fa8f8ea9172c18e3b2b689ef3e782f3b308d2
+CF_ID=givpn11@gmail.com
+CF_KEY=f881f9b79d839f0f2f7601f7a7bd18ab8ddda
 set -euo pipefail
 IP=$(wget -qO- ipv4.icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
