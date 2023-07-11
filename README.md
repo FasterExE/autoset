@@ -77,8 +77,8 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 [![Telegram-group](https://img.shields.io/badge/Telegram-group-blue)](https://t.me/givpn_grup)
 
 # Buy me a coffee
-[![Saweria donate button](https://img.shields.io/badge/Donate-Saweria-red)](https://saweria.co/givpn11)
 [![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-blue)](https://paypal.me/givpn11)
+[![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
 <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
 # ATTENTION READ CAREFULLY
 - NOT FOR SALE BECAUSE I GET IT FREE FROM THE INTERNET
