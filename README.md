@@ -64,7 +64,7 @@
 # Install
 - Step 1 Update
 ```
-apt update && apt upgrade -y && reboot
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && reboot
 ```
 - Step 2 Install
 ```
