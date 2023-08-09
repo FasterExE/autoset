@@ -38,6 +38,7 @@ ram
 ;;
 5)
 reboot
+/sbin/reboot
 ;;
 6)
 speedtest
