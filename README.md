@@ -76,11 +76,13 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
 [![Telegram-group](https://img.shields.io/badge/Telegram-group-blue)](https://t.me/givpn_grup/)
 
-# Buy me a coffee
+# Donate
 [![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-yellow)](https://paypal.me/givpn11)
 [![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
 [![Bitcoin donate button](https://img.shields.io/badge/Donate-Bitcoin-orange)](https://www.blockchain.com/explorer/addresses/btc/3BE1deCJcuykuTHMzmrmNYgN51E24Hix8i)
 [![Ethereum donate button](https://img.shields.io/badge/Donate-Ethereum-blue)](https://www.blockchain.com/explorer/addresses/eth/0x3eb09df9a72e8e333e202116ff3eb348b3ebf554)
+# List Donate
+[![donate button](https://img.shields.io/badge/List-Donate-green)](https://github.com/givpn/donate)
 <!-- <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a> -->
 # ATTENTION READ CAREFULLY
 - NOT FOR SALE BECAUSE I GET IT FREE FROM THE INTERNET
